@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tiro+Tamil&display=swap");
+/* 
+  font-family: 'Lobster', cursive;
+font-family: 'Tiro Tamil', serif;
+*/
+
+:root {
+  --logo-font: "Lobster", cursive;
+  --text-font: "Tiro Tamil", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--text-font);
+  height: 100vh;
+  width: 100vw;
+  background: hsl(200, 100%, 20%);
+}
+
+.wrong {
+  background: hsl(0, 100%, 20%);
+  color: white;
+}
+
+.correct {
+  background: hsl(145, 100%, 20%);
+  color: white;
+}
+
+header {
+  height: 4rem;
+  background: #005985;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+section#quiz {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  min-width: 18rem;
+  max-width: 40rem;
+  background: #005985;
+  color: white;
+  box-shadow: 0 0 6px rgb(0 0 0 / 30%);
+}
+
+div#quiz_start_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10rem;
+  /* display: none; */
+}
+
+.quiz_container {
+  display: none;
+}
+
+.time_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.time_container h3, strong {
+    font-weight: normal;
+}
+
+
+div#quiz_board {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* display: none; */
+}
+
+.quiz_question {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.quiz_option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quiz_option button {
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover,
+button:focus {
+  background: rgb(255 255 255 / 70%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+select {
+  padding: 0.5rem;
+}
+
+button.q_start_btn {
+  padding: 0.5rem;
+  cursor: pointer;
+}

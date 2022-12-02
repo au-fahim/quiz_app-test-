@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Quizee</h1></header>
+    <section id="quiz">
+      <!-- Quiz Start section -->
+      <div id="quiz_start_section">
+        <!-- Quiz Quantity -->
+        <select id="difficulty_level">
+          <option value="5">5 Question</option>
+          <option value="10">10 Question</option>
+          <option value="15">15 Question</option>
+        </select>
+
+        <!-- Quiz Time -->
+        <select id="time">
+          <option value="5">5 Second</option>
+          <option value="10">10 Second</option>
+          <option value="15">15 Second</option>
+        </select>
+
+        <button class="q_start_btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Board -->
+      <div class="quiz_container">
+        <div class="time_container">
+          <h3>Question: 01/10</h3>
+          <strong>Time: 5:00</strong>
+        </div>
+        <div id="quiz_board">
+          <div class="quiz_question">What is Ananas?</div>
+          <div class="quiz_option">
+            <button class="op_1">fruit</button>
+            <button class="op_2">drink</button>
+            <button class="op_3">food</button>
+            <button class="op_4">don't know</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
