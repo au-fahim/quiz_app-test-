@@ -37,7 +37,6 @@ function showQuestion(singleQuestion) {
   let optionIndex = 0;
   options.forEach((item) => {
     // let optionBtn = document.createElement("button");
-    console.log(item);
     item.innerText = singleQuestion.option[optionIndex++];
   });
 
@@ -49,9 +48,3 @@ function showQuestion(singleQuestion) {
   // Set the Duration Time
   timeDuration.innerHTML = `Time: 15 sec`;
 }
-
-// options.addEventListener("click", () => currentQuestionIndex++);
-
-// function nextQuiz() {
-//   currentQuestionIndex++;
-// }
